@@ -302,3 +302,18 @@
         }
     }
 }
+#filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+#filters > div:first-child {
+    justify-self: start;
+}
+
+#filters > div:last-child {
+    justify-self: end;
+}

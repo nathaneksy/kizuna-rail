@@ -417,3 +417,86 @@ article.confirmation-page {
         }
     }
 }
+
+@media print {
+    @page {
+        size: letter;
+        margin: 0.35in;
+    }
+
+    header,
+    footer,
+    nav,
+    .confirmation-actions,
+    button,
+    .btn,
+    .next-steps {
+        display: none !important;
+    }
+
+    body,
+    main,
+    .confirmation-page,
+    .confirmation-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .confirmation-page {
+        font-size: 9pt;
+        line-height: 1.2;
+    }
+
+    .confirmation-header {
+        padding: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .success-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .confirmation-title {
+        font-size: 18pt;
+        margin: 0.25rem 0;
+    }
+
+    .confirmation-message {
+        margin: 0.25rem 0;
+    }
+
+    .booking-reference {
+        padding: 0.4rem;
+        margin-top: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 14pt;
+        margin: 0.5rem 0 0.25rem;
+    }
+
+    .details-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+    }
+
+    .detail-card,
+    .passenger-info-card,
+    .important-info {
+        padding: 0.5rem !important;
+        margin-bottom: 0.4rem !important;
+        box-shadow: none !important;
+    }
+
+    .passenger-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.4rem;
+    }
+
+    .important-info {
+        margin-top: 0.5rem !important;
+    }
+}
